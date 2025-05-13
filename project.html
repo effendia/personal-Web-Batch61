@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web 61</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/project.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+
+</head>
+<body>
+
+   <!-- NAVBAR -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <img src="assets/img/icon1-removebg-preview.png" style="width: 60px; padding: 10px;" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="project.html">My Project</a>
+              </li>
+            </ul>
+              <button style="background-color: black !important; color: white; border-color: black; width: 112px !important ;" class="btn btn-outline-success" type="submit">Contact Me</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- My Project -->
+  
+        <h2 style="font-weight: bold;">ADD MY PROJECT</h2>
+        <div class="container">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Project Name</label>
+            <input type="text" class="form-control" id="nama" placeholder="">
+          </div>
+          <div class="row g-3">
+            <div class="col">
+                <label for="start" class="form-label">Start Date</label>
+              <input type="date" class="form-control" id="start" aria-label="First name">
+            </div>
+            <div class="col">
+                <label for="end" class="form-label">End Date</label>
+              <input type="date" class="form-control" id="end" aria-label="Last name">
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" id="description" rows="4"></textarea>
+          </div>
+
+          <label for="" class="form-label">Tekhnologies</label>
+    <div style="  display: flex;
+    gap: 200px;" class="checkbox">
+       <div >
+          <div class="form-check">
+            <input class="form-check-input" src="assets/img/icons8-node-js-48.png" type="checkbox"  id="node">
+            <label class="form-check-label" for="node">
+              Node Js
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" src="assets/img/icons8-react-native-48.png" type="checkbox"  id="reach">
+            <label class="form-check-label" for="Reach">
+              Reach Js
+            </label>
+          </div>
+        </div>      
+
+       <div> 
+          <div class="form-check">
+            <input class="form-check-input" src="assets/img/icons8-nextjs-48.png" type="checkbox"  id="next">
+            <label class="form-check-label" for="next">
+              Next js
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" src="assets/img/icons8-typescript-48.png" type="checkbox" id="type">
+            <label class="form-check-label" for="type">
+              TypeScript
+            </label>
+          </div>
+        </div>  
+      </div> 
+          <div class="mb-3">
+            <label for="input" class="form-label">Upload Image</label>
+            <input class="form-control" placeholder="chose" type="file" id="input" multiple>
+            <img id="view-img" src="" alt="">
+          </div>
+    
+          <div class="d-grid  d-md-flex justify-content-md-end">
+            <button style="background-color: black; border: black; width: 100px; border-radius: 18px;" class="btn btn-primary me-md-2" type="button" onclick="getValue(event)">Submit</button>
+          </div>
+        </div>  
+
+        <div style="background-color: rgb(243, 243, 243); margin: 0;" class="bgproject">
+  <hr></hr>
+
+  <h2>MY PROJECT</h2>
+  
+  <div id="project"> </div>
+ 
+</div>
+
+
+        <script src="assets/style/index.js"></script>
+</body>
+</html>

@@ -13,6 +13,8 @@ body {
     width: 60px;
 }
 
+
+
 /* card */
 
 .item{
@@ -105,3 +107,36 @@ h1{
     font-size: 30px;
 }
 
+/* My PROJECT */
+
+
+/* CONTENT MY PROJECT */
+
+#project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.myproject{
+    width: 400px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    border-color: black;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#btn {
+  flex: 1;
+  padding: 5px
+}
+
+#button{
+    height: 30px;
+    width: 175px;
+   background-color: #2d3748;
+}
